@@ -1,0 +1,2 @@
+Target1 ansible_host=40.90.237.237 ansible_ssh_pass=MAULIKsolanki@47 ansible_user=Maulik_1
+Target2 ansible_host=40.90.238.70 ansible_ssh_pass=MAULIKsolanki@47 ansible_user=Maulik_2

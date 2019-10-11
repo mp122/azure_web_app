@@ -1,0 +1,11 @@
+-
+  name: 'Deploy a WebApplication'
+  hosts: Target1
+  tasks:
+    - name: Ping Testing
+      ping:
+
+    - name: Create Application Database.
+      become: true
+      become_method: sudo
+      mysql_db: name=drupal_db state=present

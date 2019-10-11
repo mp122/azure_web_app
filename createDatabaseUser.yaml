@@ -1,0 +1,16 @@
+-
+  name: 'Deploy a WebApplication'
+  hosts: Target1
+  tasks:
+    - name: Ping Testing
+      ping:
+
+    - name: Create Database User
+      become: true
+      become_method: sudo
+      mysql_user:
+        name: rutvi
+        password: root
+        priv: '*.*:ALL'
+        state: present
+        host: '%'

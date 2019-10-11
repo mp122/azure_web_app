@@ -1,0 +1,8 @@
+---
+- hosts: Target1
+  tasks:
+    - name: Install nginx web server
+      become: true
+      become_method: sudo
+      apt: name=nginx state=present
+

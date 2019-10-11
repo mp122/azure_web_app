@@ -1,0 +1,12 @@
+-
+  name: 'Deploy a WebApplication'
+  hosts: Target1
+  tasks:
+    - name: Ping Testing
+      ping:
+
+    - name: Start MySQL Service
+      service:
+        name: mysql
+        state: started
+        enabled: yes
